@@ -16,14 +16,14 @@ where soh.salespersonid = (select salespersonid
 						   limit 1);
 ```
 
-2. Select every `sale.salesorderdetail` whose `orderqty` is within 1 units (in either direction) of the average `orderqty`.
+2. Select every `sale.salesorderdetail` whose `orderqty` is within 5 units (in either direction) of the average `orderqty`.
 
 ```sql
 select 
   * 
 from sales.salesorderdetail
-where orderqty < ((select avg(orderqty) from sales.salesorderdetail) + 1) 
-  and orderqty > ((select avg(orderqty) from sales.salesorderdetail) - 1);
+where orderqty < ((select avg(orderqty) from sales.salesorderdetail) + 5) 
+  and orderqty > ((select avg(orderqty) from sales.salesorderdetail) - 5);
 ```
 
 3. Select every `person.address` which comes from the least common two countries (based on the values in `person.address` not based on sales data or anything else).
