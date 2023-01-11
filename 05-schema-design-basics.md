@@ -154,6 +154,10 @@ JOIN review_username on review_username.review_id = review.review_id;
 * To fix this we have to make our schema a bit more complex, consider the new schema:
 
 ```sql
+DROP TABLE review_username;
+DROP TABLE review;
+DROP TABLE book;
+
 CREATE TABLE author (
     author_id BIGSERIAL PRIMARY KEY,
     name text
