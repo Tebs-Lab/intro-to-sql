@@ -17,7 +17,6 @@ Once you've successfully restored the database, start exploring a few of the tab
 
 The purpose of this exercise is to get you thinking about schema design, and warm up to using SQL — which might be something you do only occasionally. 
 
-This diagram of the Adventure Works database may help you during this exploration.
+This documentation contains detailed information about the tables and schemas in Adventureworks, as well as several useful schema diagrams.
 
-![](https://i.stack.imgur.com/LMu4W.gif)
-
+[https://dataedo.com/download/AdventureWorks.pdf](https://dataedo.com/download/AdventureWorks.pdf)
