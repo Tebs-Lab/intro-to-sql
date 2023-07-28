@@ -35,7 +35,6 @@ WHERE ba.book_id is null;
 SELECT 
   b.title, 
   a.name,
-  ru.username,
   r.rating
 FROM book b
 JOIN book_author ba ON ba.book_id=b.book_id
@@ -50,7 +49,6 @@ JOIN review r on r.book_id=b.book_id;
 SELECT 
   b.title, 
   a.name,
-  ru.username,
   r.rating
 FROM book b
 LEFT JOIN book_author ba ON ba.book_id=b.book_id
