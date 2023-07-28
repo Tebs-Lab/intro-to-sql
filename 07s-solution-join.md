@@ -35,13 +35,11 @@ WHERE ba.book_id is null;
 SELECT 
   b.title, 
   a.name,
-  ru.username,
   r.rating
 FROM book b
-JOIN book_author ba ON ba.book_id=b.book_id
-JOIN author a ON a.author_id=ba.author_id
-JOIN review r on r.book_id=b.book_id
-JOIN review_username ru on ru.review_id=r.review_id;
+LEFT JOIN book_author ba ON ba.book_id=b.book_id
+LEFT JOIN author a ON a.author_id=ba.author_id
+JOIN review r on r.book_id=b.book_id;
 ```
 
 5. Modify your query from #4 to include all books, regardless of whether or not they have any reviews.
@@ -51,11 +49,16 @@ JOIN review_username ru on ru.review_id=r.review_id;
 SELECT 
   b.title, 
   a.name,
-  ru.username,
   r.rating
 FROM book b
 LEFT JOIN book_author ba ON ba.book_id=b.book_id
 LEFT JOIN author a ON a.author_id=ba.author_id
-LEFT JOIN review r on r.book_id=b.book_id
-LEFT JOIN review_username ru on ru.review_id=r.review_id;
+LEFT JOIN review r on r.book_id=b.book_id;
+```
+6. Write a query that identifies which books don't have a book_fulltext record.
+
+```sql
+SELECT * from book
+LEFT JOIN book_fulltext ON book_fulltext.book_id=book.book_id
+WHERE book_fulltext IS null;
 ```

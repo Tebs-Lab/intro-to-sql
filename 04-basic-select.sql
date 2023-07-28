@@ -1,5 +1,5 @@
 -- Lets get our books back
-DROP TABLE book;
+DROP TABLE IF EXISTS book;
 CREATE TABLE book (
     book_id BIGSERIAL PRIMARY KEY,
     title TEXT NOT NULL,
@@ -12,10 +12,16 @@ CREATE TABLE book (
 -- Inserting when all columns are specified
 -- NOTE, generally, you would not want to specify the value for a (BIG)SERIAL (See next example)
 INSERT INTO book (title, author, publish_date, price) VALUES ('Pride and Prejudice', 'Jane Austen', '01-28-1813', 6.99);
+INSERT INTO book (title, author, publish_date, price) VALUES ('Sense and Sensibility', 'Jane Austen', '10-14-1811', 6.99);
 INSERT INTO book (title, author, publish_date, price) VALUES ('To Kill a Mockingbird', 'Harper Lee', '07-11-1960', 6.99);
 INSERT INTO book (title, author, publish_date, price) VALUES ('The Great Gatsby', 'F. Scott Fitzgerald', '04-10-1925', 12.50);
 INSERT INTO book (title, author, publish_date, price) VALUES ('One Hundred Years of Solitude', 'Gabriel García Márquez', '05-5-1967', 8.99);
 INSERT INTO book (title, author, publish_date, price) VALUES ('In Cold Blood', 'Truman Capote', '09-25-1965', 4.99);
+INSERT INTO book (title, author, publish_date, price) VALUES ('Brave New World', 'Aldous Huxley', '01-01-1932', 19.84);
+INSERT INTO book (title, author, publish_date, price) VALUES ('To The Lighthouse', 'Virginia Woolf', '05-05-1927', 15.00);
+INSERT INTO book (title, author, publish_date, price) VALUES ('Frankenstein', 'Mary Shelley', '01-01-1818', 7.50);
+INSERT INTO book (title, author, publish_date, price) VALUES ('Beloved', 'Toni Morrison', '09-13-1987', 12.50);
+INSERT INTO book (title, author, publish_date, price) VALUES ('Song of Solomon', 'Toni Morrison', '01-01-1977', 12.50);
 
 -- Select everything
 SELECT * FROM book;
