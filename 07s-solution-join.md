@@ -37,8 +37,8 @@ SELECT
   a.name,
   r.rating
 FROM book b
-JOIN book_author ba ON ba.book_id=b.book_id
-JOIN author a ON a.author_id=ba.author_id
+LEFT JOIN book_author ba ON ba.book_id=b.book_id
+LEFT JOIN author a ON a.author_id=ba.author_id
 JOIN review r on r.book_id=b.book_id;
 ```
 
