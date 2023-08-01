@@ -34,7 +34,7 @@ Write queries that satisfy the following prompts:
 
 1. Select just the titles of all the books by Jane Austen.
 
-2. Select all the books whose book_id price is larger than $7.00.
+2. Select all the books whose price is larger than $7.00.
 
 3. Select all the books that were published before 1975.
 
