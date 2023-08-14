@@ -48,16 +48,17 @@ CREATE TABLE review (
 -- include it literally in a string, as you see here:
 INSERT INTO review (book_id, rating, content) VALUES (1, 3, 'didn''t like it, dry and boring.');
 INSERT INTO review (book_id, rating, content) VALUES (1, 7, 'A window into a time gone by, and a sad look at just how little has changed.');
-INSERT INTO review (book_id, rating, content) VALUES (2, 10, 'Powerful commentary on the lies communities tell themselves about their own goodness.');
-INSERT INTO review (book_id, rating, content) VALUES (2, 8, 'Cutting and poignient, but dated. For a book about modern racism try "The Hate U Give"');
-INSERT INTO review (book_id, rating, content) VALUES (2, 6, 'I do not understand how they could find Tom Robinson guilty. He obviously did not do it. Unrealistic.');
-INSERT INTO review (book_id, rating, content) VALUES (3, 4, 'Gatsby was a real jerk.');
-INSERT INTO review (book_id, rating, content) VALUES (3, 8, 'A masterwork about the evils of oppulence.');
-INSERT INTO review (book_id, rating, content) VALUES (4, 4, 'The translation to English was poor, you should read this in the original Spanish if you can.');
-INSERT INTO review (book_id, rating, content) VALUES (4, 9, 'A remarkable story about how our ancenstry follows us into the future and haunts our present.');
+INSERT INTO review (book_id, rating, content) VALUES (3, 10, 'Powerful commentary on the lies communities tell themselves about their own goodness.');
+INSERT INTO review (book_id, rating, content) VALUES (3, 8, 'Cutting and poignient, but dated. For a book about modern racism try "The Hate U Give"');
+INSERT INTO review (book_id, rating, content) VALUES (3, 6, 'I do not understand how they could find Tom Robinson guilty. He obviously did not do it. Unrealistic.');
+INSERT INTO review (book_id, rating, content) VALUES (4, 4, 'Gatsby was a real jerk.');
+INSERT INTO review (book_id, rating, content) VALUES (4, 8, 'A masterwork about the evils of oppulence.');
+INSERT INTO review (book_id, rating, content) VALUES (5, 4, 'The translation to English was poor, you should read this in the original Spanish if you can.');
+INSERT INTO review (book_id, rating, content) VALUES (5, 9, 'A remarkable story about how our ancenstry follows us into the future and haunts our present.');
 INSERT INTO review (book_id, rating, content) VALUES (5, 10, 'A genre defining masterwork with a chilling subject.');
-INSERT INTO review (book_id, rating, content) VALUES (5, 3, 'Too much evil in this book, don''t read it!');
-INSERT INTO review (book_id, rating, content) VALUES (5, 6, 'The writing is incredible, but Capote takes too many liberties with crucial facts of the case to be considered non-fiction.');
+INSERT INTO review (book_id, rating, content) VALUES (6, 3, 'Too much evil in this book, don''t read it!');
+INSERT INTO review (book_id, rating, content) VALUES (6, 6, 'The writing is incredible, but Capote takes too many liberties with crucial facts of the case to be considered non-fiction.');
+
 ```
 
 * To query tables with relationships we need to use something called a "join" 
@@ -212,16 +213,17 @@ CREATE TABLE review (
 
 INSERT INTO review (book_id, rating, content) VALUES (1, 3, 'didn''t like it, dry and boring.');
 INSERT INTO review (book_id, rating, content) VALUES (1, 7, 'A window into a time gone by, and a sad look at just how little has changed.');
-INSERT INTO review (book_id, rating, content) VALUES (2, 10, 'Powerful commentary on the lies communities tell themselves about their own goodness.');
-INSERT INTO review (book_id, rating, content) VALUES (2, 8, 'Cutting and poignient, but dated. For a book about modern racism try "The Hate U Give"');
-INSERT INTO review (book_id, rating, content) VALUES (2, 6, 'I do not understand how they could find Tom Robinson guilty. He obviously did not do it. Unrealistic.');
-INSERT INTO review (book_id, rating, content) VALUES (3, 4, 'Gatsby was a real jerk.');
-INSERT INTO review (book_id, rating, content) VALUES (3, 8, 'A masterwork about the evils of oppulence.');
-INSERT INTO review (book_id, rating, content) VALUES (4, 4, 'The translation to English was poor, you should read this in the original Spanish if you can.');
-INSERT INTO review (book_id, rating, content) VALUES (4, 9, 'A remarkable story about how our ancenstry follows us into the future and haunts our present.');
+INSERT INTO review (book_id, rating, content) VALUES (3, 10, 'Powerful commentary on the lies communities tell themselves about their own goodness.');
+INSERT INTO review (book_id, rating, content) VALUES (3, 8, 'Cutting and poignient, but dated. For a book about modern racism try "The Hate U Give"');
+INSERT INTO review (book_id, rating, content) VALUES (3, 6, 'I do not understand how they could find Tom Robinson guilty. He obviously did not do it. Unrealistic.');
+INSERT INTO review (book_id, rating, content) VALUES (4, 4, 'Gatsby was a real jerk.');
+INSERT INTO review (book_id, rating, content) VALUES (4, 8, 'A masterwork about the evils of oppulence.');
+INSERT INTO review (book_id, rating, content) VALUES (5, 4, 'The translation to English was poor, you should read this in the original Spanish if you can.');
+INSERT INTO review (book_id, rating, content) VALUES (5, 9, 'A remarkable story about how our ancenstry follows us into the future and haunts our present.');
 INSERT INTO review (book_id, rating, content) VALUES (5, 10, 'A genre defining masterwork with a chilling subject.');
-INSERT INTO review (book_id, rating, content) VALUES (5, 3, 'Too much evil in this book, don''t read it!');
-INSERT INTO review (book_id, rating, content) VALUES (5, 6, 'The writing is incredible, but Capote takes too many liberties with crucial facts of the case to be considered non-fiction.');
+INSERT INTO review (book_id, rating, content) VALUES (6, 3, 'Too much evil in this book, don''t read it!');
+INSERT INTO review (book_id, rating, content) VALUES (6, 6, 'The writing is incredible, but Capote takes too many liberties with crucial facts of the case to be considered non-fiction.');
+
 ```
 
 * Now, we can join our books, authors, and users:
