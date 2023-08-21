@@ -55,14 +55,13 @@ INSERT INTO review (book_id, rating, content) VALUES (4, 4, 'Gatsby was a real j
 INSERT INTO review (book_id, rating, content) VALUES (4, 8, 'A masterwork about the evils of oppulence.');
 INSERT INTO review (book_id, rating, content) VALUES (5, 4, 'The translation to English was poor, you should read this in the original Spanish if you can.');
 INSERT INTO review (book_id, rating, content) VALUES (5, 9, 'A remarkable story about how our ancenstry follows us into the future and haunts our present.');
-INSERT INTO review (book_id, rating, content) VALUES (5, 10, 'A genre defining masterwork with a chilling subject.');
+INSERT INTO review (book_id, rating, content) VALUES (6, 10, 'A genre defining masterwork with a chilling subject.');
 INSERT INTO review (book_id, rating, content) VALUES (6, 3, 'Too much evil in this book, don''t read it!');
 INSERT INTO review (book_id, rating, content) VALUES (6, 6, 'The writing is incredible, but Capote takes too many liberties with crucial facts of the case to be considered non-fiction.');
-
 ```
 
 * To query tables with relationships we need to use something called a "join" 
-* We'll look at joins in more detail momentarally, but consider this simple example:
+* We'll look at joins in more detail momentarily, but consider this simple example:
 
 ```sql
 SELECT
@@ -220,10 +219,16 @@ INSERT INTO review (book_id, rating, content) VALUES (4, 4, 'Gatsby was a real j
 INSERT INTO review (book_id, rating, content) VALUES (4, 8, 'A masterwork about the evils of oppulence.');
 INSERT INTO review (book_id, rating, content) VALUES (5, 4, 'The translation to English was poor, you should read this in the original Spanish if you can.');
 INSERT INTO review (book_id, rating, content) VALUES (5, 9, 'A remarkable story about how our ancenstry follows us into the future and haunts our present.');
+<<<<<<< Updated upstream
 INSERT INTO review (book_id, rating, content) VALUES (5, 10, 'A genre defining masterwork with a chilling subject.');
 INSERT INTO review (book_id, rating, content) VALUES (6, 3, 'Too much evil in this book, don''t read it!');
 INSERT INTO review (book_id, rating, content) VALUES (6, 6, 'The writing is incredible, but Capote takes too many liberties with crucial facts of the case to be considered non-fiction.');
 
+=======
+INSERT INTO review (book_id, rating, content) VALUES (6, 10, 'A genre defining masterwork with a chilling subject.');
+INSERT INTO review (book_id, rating, content) VALUES (6, 3, 'Too much evil in this book, don''t read it!');
+INSERT INTO review (book_id, rating, content) VALUES (6, 6, 'The writing is incredible, but Capote takes too many liberties with crucial facts of the case to be considered non-fiction.');
+>>>>>>> Stashed changes
 ```
 
 * Now, we can join our books, authors, and users:
@@ -254,7 +259,7 @@ Expand the above join statement such that the resulting table includes the text 
 
 * In general normalization is considered a best practice, meaning:
     * Each piece of information should only exist in one place in the whole database.
-    * Anywhere that needs that information should refernece with an FK relationship.
+    * Anywhere that needs that information should reference with an FK relationship.
 * But it can be taken too far, for example in our schema complete normalization might mean:
     * Making a price table with each unique price,
     * Removing price from the book table, and replacing it with a FK to our new price table.

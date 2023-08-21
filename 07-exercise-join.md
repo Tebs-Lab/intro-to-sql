@@ -92,10 +92,9 @@ INSERT INTO review (book_id, rating, content) VALUES (4, 4, 'Gatsby was a real j
 INSERT INTO review (book_id, rating, content) VALUES (4, 8, 'A masterwork about the evils of oppulence.');
 INSERT INTO review (book_id, rating, content) VALUES (5, 4, 'The translation to English was poor, you should read this in the original Spanish if you can.');
 INSERT INTO review (book_id, rating, content) VALUES (5, 9, 'A remarkable story about how our ancenstry follows us into the future and haunts our present.');
-INSERT INTO review (book_id, rating, content) VALUES (5, 10, 'A genre defining masterwork with a chilling subject.');
+INSERT INTO review (book_id, rating, content) VALUES (6, 10, 'A genre defining masterwork with a chilling subject.');
 INSERT INTO review (book_id, rating, content) VALUES (6, 3, 'Too much evil in this book, don''t read it!');
 INSERT INTO review (book_id, rating, content) VALUES (6, 6, 'The writing is incredible, but Capote takes too many liberties with crucial facts of the case to be considered non-fiction.');
-
 
 INSERT INTO book_fulltext VALUES (1, 'Pride and Prejudice: PRETEND THIS IS A LOOOOOOT OF TEXT');
 INSERT INTO book_fulltext VALUES (2, 'Sense and Sensibility: PRETEND THIS IS A LOOOOOOT OF TEXT');
